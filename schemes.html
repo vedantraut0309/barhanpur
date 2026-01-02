@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ग्रामपंचायत | योजना</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@500;700&family=Mukta:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="official-header">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="logo-area flex items-center gap-4">
+          <!-- <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Emblem_of_Maharashtra.svg"
+            alt="Govt Logo"
+            class="h-14"
+          /> -->
+          <div>
+            <h1 class="village-name text-3xl font-bold leading-none italic">
+              ग्रामपंचायत बऱ्हाणपूर
+            </h1>
+            <p class="district-info text-sm uppercase tracking-tighter mt-1">
+              तालुका: मोर्शी | जिल्हा: अमरावती
+            </p>
+          </div>
+        </div>
+
+        <nav class="hidden lg:flex space-x-8 nav-links-font">
+          <a href="index.html">मुख्य पान</a>
+          <a href="about.html">आमच्याबद्दल</a>
+          <a href="services.html">सेवा</a>
+          <a href="schemes.html" class="active-link">योजना</a>
+          <a href="contact.html">संपर्क</a>
+        </nav>
+
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-3xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-nav hidden">
+      <a href="index.html">मुख्य पान</a>
+      <a href="about.html">आमच्याबद्दल</a>
+      <a href="services.html">सेवा</a>
+      <a href="schemes.html">योजना</a>
+      <a href="contact.html">संपर्क</a>
+    </div>
+
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h3 class="section-heading text-center mb-12 italic">शासकीय योजना</h3>
+        <p class="text-lg text-center mb-8">
+          आमच्या ग्रामपंचायतीत शेतकऱ्यांसाठी विविध शासकीय योजना उपलब्ध आहेत.
+          खालील योजनांची माहिती दिली आहे:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="service-box">
+            <div class="icon-container bg-blue-100">
+              <i class="fas fa-seedling icon text-blue-500"></i>
+            </div>
+            <h4>प्रधानमंत्री किसान सम्मान निधी (PM-KISAN)</h4>
+            <p>
+              शेतकऱ्यांना आर्थिक मदत देणारी योजना. वार्षिक ६,००० रुपये थेट
+              खात्यात जमा होतात.
+            </p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+          <div class="service-box">
+            <div class="icon-container bg-green-100">
+              <i class="fas fa-shield-alt icon text-green-500"></i>
+            </div>
+            <h4>प्रधानमंत्री फसल बीमा योजना (PMFBY)</h4>
+            <p>
+              पिकांच्या नुकसानीपासून संरक्षण देणारी योजना. नैसर्गिक आपत्तींमध्ये
+              मदत मिळते.
+            </p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+          <div class="service-box">
+            <div class="icon-container bg-yellow-100">
+              <i class="fas fa-flask icon text-yellow-500"></i>
+            </div>
+            <h4>मृदा आरोग्य कार्ड योजना</h4>
+            <p>जमिनीच्या आरोग्याची तपासणी आणि सुधारणा करण्यासाठी मदत.</p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+          <div class="service-box">
+            <div class="icon-container bg-red-100">
+              <i class="fas fa-tractor icon text-red-500"></i>
+            </div>
+            <h4>किसान क्रेडिट कार्ड (KCC)</h4>
+            <p>
+              शेतकऱ्यांना कर्जासाठी सोयीस्कर योजना. कमी व्याजदराने कर्ज उपलब्ध.
+            </p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+          <div class="service-box">
+            <div class="icon-container bg-purple-100">
+              <i class="fas fa-water icon text-purple-500"></i>
+            </div>
+            <h4>प्रधानमंत्री कृषी सिंचाई योजना (PMKSY)</h4>
+            <p>
+              शेतीसाठी पाणीपुरवठा सुधारण्यासाठी योजना. ड्रिप सिंचन आणि
+              स्प्रिंकलरला अनुदान.
+            </p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+          <div class="service-box">
+            <div class="icon-container bg-pink-100">
+              <i class="fas fa-leaf icon text-pink-500"></i>
+            </div>
+            <h4>परंपरागत कृषी विकास योजना (PKVY)</h4>
+            <p>परंपरागत शेतीला प्रोत्साहन देणारी योजना. जैविक शेतीसाठी मदत.</p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+          <div class="service-box">
+            <div class="icon-container bg-indigo-100">
+              <i class="fas fa-cow icon text-indigo-500"></i>
+            </div>
+            <h4>राष्ट्रीय पशुधन मिशन (NLM)</h4>
+            <p>पशुधन विकासासाठी योजना. दूध उत्पादन आणि आरोग्य सुधारणा.</p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+          <div class="service-box">
+            <div class="icon-container bg-teal-100">
+              <i class="fas fa-warehouse icon text-teal-500"></i>
+            </div>
+            <h4>किसान उन्नत भारत अभियान (KUBA)</h4>
+            <p>
+              शेतकऱ्यांच्या कौशल्य विकासासाठी योजना. प्रशिक्षण आणि तंत्रज्ञान.
+            </p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+          <div class="service-box">
+            <div class="icon-container bg-orange-100">
+              <i class="fas fa-solar-panel icon text-orange-500"></i>
+            </div>
+            <h4>कुलीन योजना (KUSUM)</h4>
+            <p>
+              सौर ऊर्जा वापरासाठी शेतकऱ्यांना मदत. पंप सेट आणि ग्रिड कनेक्टेड
+              सोलर.
+            </p>
+            <button class="btn-small">अधिक माहिती</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center"
+      >
+        <div>
+          <h4 class="footer-title">पत्ता</h4>
+          <p class="opacity-70">
+            ग्रामपंचायत कार्यालय बऱ्हाणपूर, <br />
+            तालुका: मोर्शी, जिल्हा: अमरावती.
+          </p>
+          <p class="mt-2">ईमेल: contact@grampanchayat.in</p>
+        </div>
+        <div>
+          <h4 class="footer-title">दुवे</h4>
+          <div class="flex flex-col gap-2 opacity-70 italic">
+            <a href="index.html">मुख्य पान</a>
+            <a href="about.html">आमच्याबद्दल</a>
+            <a href="services.html">सेवा</a>
+            <a href="schemes.html">योजना</a>
+            <a href="contact.html">संपर्क</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">कार्यालयीन वेळा</h4>
+          <div class="flex flex-col gap-2 opacity-70">
+            <p>सोमवार ते शनिवार: स. ९:०० ते सा. ६:३०</p>
+            <p>रविवार आणि सुट्टी: बंद</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-10 opacity-30 text-x border-t pt-4">
+        &copy; २०२५ ग्रामपंचायत बऱ्हाणपूर.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ग्रामपंचायत | संपर्क</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@500;700&family=Mukta:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="official-header">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="logo-area flex items-center gap-4">
+          <!-- <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Emblem_of_Maharashtra.svg"
+            alt="Govt Logo"
+            class="h-14"
+          /> -->
+          <div>
+            <h1 class="village-name text-3xl font-bold leading-none italic">
+              ग्रामपंचायत बऱ्हाणपूर
+            </h1>
+            <p class="district-info text-sm uppercase tracking-tighter mt-1">
+              तालुका: मोर्शी | जिल्हा: अमरावती
+            </p>
+          </div>
+        </div>
+
+        <nav class="hidden lg:flex space-x-8 nav-links-font">
+          <a href="index.html">मुख्य पान</a>
+          <a href="about.html">आमच्याबद्दल</a>
+          <a href="services.html">सेवा</a>
+          <a href="schemes.html">योजना</a>
+          <a href="contact.html" class="active-link">संपर्क</a>
+        </nav>
+
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-3xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-nav hidden">
+      <a href="index.html">मुख्य पान</a>
+      <a href="about.html">आमच्याबद्दल</a>
+      <a href="services.html">सेवा</a>
+      <a href="schemes.html">योजना</a>
+      <a href="contact.html">संपर्क</a>
+    </div>
+
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h3 class="section-heading text-center mb-12 italic">संपर्क</h3>
+
+        <!-- Contact Officials Section -->
+        <div class="mb-16">
+          <h4 class="text-2xl font-bold text-center mb-8 text-primary">
+            संपर्क अधिकारी
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Sarpanch Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री.विशाल गणेशराव झाडे</h5>
+              <p class="text-primary font-medium">सरपंच</p>
+              <p class="text-gray-600">मोबाईल: 9876543210</p>
+              <!-- <p class="text-gray-600">ईमेल: sarpanch@grampanchayat.in</p> -->
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Upsarpanch Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री.सागर भारतराव तुळे</h5>
+              <p class="text-primary font-medium">उपसरपंच</p>
+              <p class="text-gray-600">मोबाईल: 9876543211</p>
+              <!-- <p class="text-gray-600">ईमेल: upsarpanch@grampanchayat.in</p> -->
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Gramsevak Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री.गजानन निकम</h5>
+              <p class="text-primary font-medium">ग्रामपंचायत अधिकारी</p>
+              <p class="text-gray-600">मोबाईल: 9876543212</p>
+              <!-- <p class="text-gray-600">ईमेल: gramsevak@grampanchayat.in</p> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="mb-16">
+          <h4 class="text-2xl font-bold text-center mb-8 text-primary">
+            स्थान
+          </h4>
+          <div class="bg-light-bg p-8 rounded-lg shadow-md">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5!2d72.8!3d19.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA2JzAwLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1634567890123!5m2!1sen!2sin"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="mt-4 text-gray-600 text-center">
+              ग्रामपंचायत कार्यालयाचा पत्ता: मु. पो. बऱ्हाणपूर, तालुका: मोर्शी,
+              जिल्हा: अमरावती.
+            </p>
+          </div>
+        </div>
+
+        <!-- Office Hours and Additional Info Section -->
+        <div>
+          <h4 class="text-2xl font-bold text-center mb-8 text-primary">
+            कार्यालयीन माहिती
+          </h4>
+          <div class="bg-light-bg p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h5 class="text-xl font-semibold mb-4 text-primary">
+                  कार्यालयीन वेळा
+                </h5>
+                <ul class="space-y-2 text-gray-700">
+                  <li>
+                    <strong>सोमवार ते शनिवार:</strong> सकाळी ९:०० ते संध्याकाळी
+                    ६:३०
+                  </li>
+                  <li><strong>रविवार आणि सुट्टी:</strong> बंद</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="text-xl font-semibold mb-4 text-primary">
+                  आमच्या सेवा
+                </h5>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• ऑनलाईन दाखले आणि प्रमाणपत्रे</li>
+                  <li>• जमीन नोंदणी आणि माहिती</li>
+                  <li>• कर भरणा आणि बिलिंग</li>
+                  <li>• तक्रार निवारण आणि मदत</li>
+                  <li>• ग्रामविकास प्रकल्पांची माहिती</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-8 text-center">
+              <p class="text-lg text-gray-700">
+                अधिक माहितीसाठी किंवा मदतीसाठी वरील संपर्क अधिकारीांशी संपर्क
+                साधा.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center"
+      >
+        <div>
+          <h4 class="footer-title">पत्ता</h4>
+          <p class="opacity-70">
+            ग्रामपंचायत कार्यालय बऱ्हाणपूर, <br />
+            तालुका: मोर्शी, जिल्हा: अमरावती.
+          </p>
+          <p class="mt-2">ईमेल: contact@grampanchayat.in</p>
+        </div>
+        <div>
+          <h4 class="footer-title">दुवे</h4>
+          <div class="flex flex-col gap-2 opacity-70 italic">
+            <a href="index.html">मुख्य पान</a>
+            <a href="about.html">आमच्याबद्दल</a>
+            <a href="services.html">सेवा</a>
+            <a href="schemes.html">योजना</a>
+            <a href="contact.html">संपर्क</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">कार्यालयीन वेळा</h4>
+          <div class="flex flex-col gap-2 opacity-70">
+            <p>सोमवार ते शनिवार: स. ९:०० ते सा. ६:३०</p>
+            <p>रविवार आणि सुट्टी: बंद</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-10 opacity-30 text-x border-t pt-4">
+        &copy; २०२५ ग्रामपंचायत बऱ्हाणपूर.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ग्रामपंचायत | आमच्याबद्दल</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@500;700&family=Mukta:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="official-header">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="logo-area flex items-center gap-4">
+          <!-- <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Emblem_of_Maharashtra.svg"
+            alt="Govt Logo"
+            class="h-14"
+          /> -->
+          <div>
+            <h1 class="village-name text-3xl font-bold leading-none italic">
+              ग्रामपंचायत बऱ्हाणपूर
+            </h1>
+            <p class="district-info text-sm uppercase tracking-tighter mt-1">
+              तालुका: मोर्शी | जिल्हा: अमरावती
+            </p>
+          </div>
+        </div>
+
+        <nav class="hidden lg:flex space-x-8 nav-links-font">
+          <a href="index.html">मुख्य पान</a>
+          <a href="about.html" class="active-link">आमच्याबद्दल</a>
+          <a href="services.html">सेवा</a>
+          <a href="schemes.html">योजना</a>
+          <a href="contact.html">संपर्क</a>
+        </nav>
+
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-3xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-nav hidden">
+      <a href="index.html">मुख्य पान</a>
+      <a href="about.html">आमच्याबद्दल</a>
+      <a href="services.html">सेवा</a>
+      <a href="schemes.html">योजना</a>
+      <a href="contact.html">संपर्क</a>
+    </div>
+
+    <div class="carousel-container">
+      <div class="mySlides">
+        <img src="./images/grampanchyat karyalya.jpeg" style="width: 100%" />
+        <div class="text-block">
+          <h2>ग्रामपंचायत कार्यालय बऱ्हाणपूर</h2>
+          <p>
+            गावातील नागरिक आणि प्रशासन यांच्या सहकार्याने गाव प्रगतीपथावर आहे.
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img src="./images/digital school suvidha.jpeg" style="width: 100%" />
+        <div class="text-block">
+          <h2>डिजिटल क्लासरूम आणि ई-लर्निंग</h2>
+          <p>
+            डिजिटल क्लासरूम आणि ई-लर्निंग सुविधांमुळे विद्यार्थ्यांना जागतिक
+            दर्जाचे शिक्षण मिळत आहे.
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img src="./images/mahila saf safai.jpeg" style="width: 100%" />
+        <div class="text-block">
+          <h2>महिला स्वच्छता अभियान</h2>
+          <p>महिलांच्या स्वच्छतेचे अभियान आणि सुरक्षित जीवन.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img src="./images/cmabhiyan.jpeg" style="width: 100%" />
+        <div class="text-block">
+          <h2>मुख्यमंत्री समृद्ध पंचायत राज अभियान</h2>
+          <p>
+            राज्य शासनाच्या ग्रामविकास विभागाने “मुख्यमंत्री समृद्ध पंचायतराज
+            अभियान” या महत्वाकांक्षी अभियानाच्या अंमलबजावणीचा निर्णय घेतला आहे.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h3 class="section-heading text-center mb-12 italic">ओळख</h3>
+
+        <!-- Officials Section -->
+        <div class="mb-16">
+          <h4 class="text-2xl font-bold text-center mb-8 text-primary">
+            पदाधिकारी
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Official Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री.विशाल गणेशराव झाडे</h5>
+              <p class="text-primary font-medium">सरपंच</p>
+              <!-- <p class="text-gray-600">मोबाईल: 9876543210</p> -->
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Official Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री.सागर भारतराव तुळे</h5>
+              <p class="text-primary font-medium">उपसरपंच</p>
+              <!-- <p class="text-gray-600">मोबाईल: 9876543211</p> -->
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Official Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री.गजानन निकम</h5>
+              <p class="text-primary font-medium">ग्रामपंचायत अधिकारी</p>
+              <!-- <p class="text-gray-600">मोबाईल: 9876543212</p> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Members Section -->
+        <div class="mb-16">
+          <h4 class="text-2xl font-bold text-center mb-8 text-primary">
+            सदस्य
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Member Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">
+                सौ. कविताताई प्रकाशराव बांबल
+              </h5>
+              <p class="text-primary font-medium">सदस्य</p>
+              <p class="text-gray-600">सदस्य, प्रभाग क्र. १</p>
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Member Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">सौ. हिनाताई दीपकराव खडसे</h5>
+              <p class="text-primary font-medium">सदस्य</p>
+              <p class="text-gray-600">सदस्य, प्रभाग क्र. १</p>
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Member Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री. महेश विष्णुपंत ढगे</h5>
+              <p class="text-primary font-medium">सदस्य</p>
+              <p class="text-gray-600">सदस्य, प्रभाग क्र. १</p>
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Member Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">सौ. राणीताई मनोजराव अवघड</h5>
+              <p class="text-primary font-medium">सदस्य</p>
+              <p class="text-gray-600">सदस्य, प्रभाग क्र. २</p>
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Member Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री. पोपेश्वर दादाराव खुळे</h5>
+              <p class="text-primary font-medium">सदस्य</p>
+              <p class="text-gray-600">सदस्य, प्रभाग क्र. ३</p>
+            </div>
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Member Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">
+                सौ. कल्पनाताई सुनिलराव काळमेघ
+              </h5>
+              <p class="text-primary font-medium">सदस्य</p>
+              <p class="text-gray-600">सदस्य, प्रभाग क्र. ३</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Employees Section -->
+        <div class="mb-16">
+          <h4 class="text-2xl font-bold text-center mb-8 text-primary">
+            कर्मचारी
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="person-card bg-light-bg p-6 rounded-lg shadow-md text-center"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Employee Photo"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h5 class="text-xl font-semibold">श्री. धीरज राजेंद्रराव झाडे</h5>
+              <p class="text-primary font-medium">लिपिक</p>
+              <!-- <p class="text-gray-600">मोबाईल: 9876543216</p> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Rural Development Work Section -->
+        <div>
+          <h4 class="text-2xl font-bold text-center mb-8 text-primary">
+            ग्रामविकास कामे
+          </h4>
+          <div class="bg-light-bg p-8 rounded-lg shadow-md">
+            <p class="text-lg mb-4">
+              आमच्या ग्रामपंचायतीत विविध ग्रामविकास प्रकल्प राबवले जातात जे
+              गावाच्या विकासासाठी महत्त्वपूर्ण आहेत. यामध्ये खालील कामांचा
+              समावेश आहे:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="icon-container bg-blue-100">
+                  <i class="fas fa-road icon text-blue-500"></i>
+                </div>
+                <p class="text-gray-700">
+                  रोड आणि पायाभूत सुविधांचे बांधकाम आणि देखभाल
+                </p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="icon-container bg-green-100">
+                  <i class="fas fa-tint icon text-green-500"></i>
+                </div>
+                <p class="text-gray-700">पाणीपुरवठा आणि स्वच्छता प्रकल्प</p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="icon-container bg-yellow-100">
+                  <i class="fas fa-graduation-cap icon text-yellow-500"></i>
+                </div>
+                <p class="text-gray-700">
+                  शिक्षण आणि आरोग्य सुविधांचे विस्तारीकरण
+                </p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="icon-container bg-red-100">
+                  <i class="fas fa-seedling icon text-red-500"></i>
+                </div>
+                <p class="text-gray-700">कृषी आणि पशुधन विकास कार्यक्रम</p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="icon-container bg-purple-100">
+                  <i class="fas fa-tree icon text-purple-500"></i>
+                </div>
+                <p class="text-gray-700">
+                  पर्यावरण संरक्षण आणि वृक्षारोपण मोहिमा
+                </p>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="icon-container bg-pink-100">
+                  <i class="fas fa-users icon text-pink-500"></i>
+                </div>
+                <p class="text-gray-700">महिला आणि बालकल्याण योजना</p>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-600">
+              या सर्व प्रकल्पांमध्ये स्थानिक नागरिकांचा सक्रिय सहभाग असतो आणि ते
+              गावाच्या एकूण प्रगतीसाठी योगदान देतात.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Population Section -->
+    <section class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h3 class="section-heading text-center mb-12 italic">लोकसंख्या</h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+        >
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="icon-container bg-blue-100">
+              <i class="fas fa-users icon text-blue-500"></i>
+            </div>
+            <h4 class="text-2xl font-bold text-gray-800 mb-2">
+              एकूण लोकसंख्या
+            </h4>
+            <p class="text-5xl font-extrabold text-primary">431</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="icon-container bg-green-100">
+              <i class="fas fa-male icon text-green-500"></i>
+            </div>
+            <h4 class="text-2xl font-bold text-gray-800 mb-2">
+              पुरुष लोकसंख्या
+            </h4>
+            <p class="text-5xl font-extrabold text-primary">230</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="icon-container bg-pink-100">
+              <i class="fas fa-female icon text-pink-500"></i>
+            </div>
+            <h4 class="text-2xl font-bold text-gray-800 mb-2">
+              महिला लोकसंख्या
+            </h4>
+            <p class="text-5xl font-extrabold text-primary">201</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center"
+      >
+        <div>
+          <h4 class="footer-title">पत्ता</h4>
+          <p class="opacity-70">
+            ग्रामपंचायत कार्यालय बऱ्हाणपूर, <br />
+            तालुका: मोर्शी, जिल्हा: अमरावती.
+          </p>
+          <p class="mt-2">ईमेल: contact@grampanchayat.in</p>
+        </div>
+        <div>
+          <h4 class="footer-title">दुवे</h4>
+          <div class="flex flex-col gap-2 opacity-70 italic">
+            <a href="index.html">मुख्य पान</a>
+            <a href="about.html">आमच्याबद्दल</a>
+            <a href="services.html">सेवा</a>
+            <a href="schemes.html">योजना</a>
+            <a href="contact.html">संपर्क</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">कार्यालयीन वेळा</h4>
+          <div class="flex flex-col gap-2 opacity-70">
+            <p>सोमवार ते शनिवार: स. ९:०० ते सा. ६:३०</p>
+            <p>रविवार आणि सुट्टी: बंद</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-10 opacity-30 text-x border-t pt-4">
+        &copy; २०२५ ग्रामपंचायत बऱ्हाणपूर.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+/* Custom Styles for Gram Panchayat */
+
+:root {
+  --primary: #1e40af; /* Royal Blue */
+  --accent: #ea580c; /* Burnt Orange */
+  --light-bg: #f8fafc; /* Cleaner white-gray */
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  background-color: var(--light-bg);
+  color: #1a202c; /* Midnight Black */
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+.nav-links-font {
+  font-family: "Khand", sans-serif;
+}
+
+/* Header */
+.official-header {
+  background: #ffffff;
+  border-bottom: 4px solid var(--primary);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.village-name {
+  color: var(--primary);
+}
+
+.nav-links-font a {
+  color: #475569;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.nav-links-font a:hover {
+  color: var(--primary);
+}
+
+.active-link {
+  color: var(--primary) !important;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Hero Section */
+.hero-banner {
+  background: linear-gradient(rgba(30, 64, 175, 0.9), rgba(234, 88, 12, 0.8)),
+    url(https://images.unsplash.com/photo-1542332213-9b5a5a3fab35?auto=format&fit=crop&w=1200&q=80);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.btn-gold {
+  background-color: var(--accent);
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-white {
+  background-color: white;
+  color: var(--primary);
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Notice Bar */
+.notice-bar {
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  font-weight: 600;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Service Boxes */
+.section-heading {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.service-box {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.4s;
+  border-top: 5px solid var(--primary);
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.service-box h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.btn-small {
+  margin-top: 15px;
+  color: var(--accent);
+  font-weight: bold;
+  border: 1px solid var(--accent);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* Person Cards */
+.person-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+  border-top: 3px solid var(--primary);
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+}
+
+.person-card img {
+  border: 3px solid var(--primary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 60px 0 20px 0;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  color: #fbbf24;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+/* Mobile Nav */
+.mobile-nav {
+  background-color: var(--primary);
+  color: white;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.mobile-nav a {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Carousel Styles */
+* {
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ddd; /* Optional: halka border */
+}
+
+.mySlides {
+  display: none; /* Default me hidden rahegi */
+}
+
+/* Caption styling */
+.text-block {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  width: 70%;
+  border-radius: 5px;
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 600px) {
+  .text-block {
+    width: 90%;
+    bottom: 10%;
+    padding: 10px;
+  }
+  .text-block h2 {
+    font-size: 1.2rem;
+  }
+  .text-block p {
+    font-size: 0.9rem;
+  }
+}
